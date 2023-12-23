@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modernize Free</title>
-    <link rel="shortcut icon" type="image/png" href="{{ asset('/themes/admin/../assets/images/logos/favicon.png') }}" />
-    <link rel="stylesheet" href="{{ asset('/themes/admin/../assets/css/styles.min.css') }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ asset('/themes/img/logos/favicon.png') }}" />
+    <link rel="stylesheet" href="{{ asset('/themes/css/style_admin.min.css') }}" />
 </head>
 
 <body>
@@ -22,8 +22,8 @@
                             <div class="card-body">
                                 <a href="{{ url('./index.html') }}"
                                     class="text-nowrap logo-img text-center d-block py-3 w-100">
-                                    <img src="{{ asset('/themes/admin/../assets/images/logos/dark-logo.svg') }}"
-                                        width="180" alt="">
+                                    <img src="{{ asset('/themes/img/logos/dark-logo.svg') }}" width="180"
+                                        alt="">
                                 </a>
                                 <p class="text-center">Your Social Campaigns</p>
                                 <form>
@@ -62,8 +62,8 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('/themes/admin/../assets/libs/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ asset('/themes/admin/../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/themes/js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ asset('/themes/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 </body>
 
 </html>

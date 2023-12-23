@@ -15,15 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home.index');
 })->name('index');
 
-Route::get('/login', function () {
-    return view('admin.login');
-});
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/admin', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/admin', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/admin', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+require __DIR__ . '/auth.php';
