@@ -1,4 +1,4 @@
-@extends('template.layout')
+@extends('home.template.layout')
 
 @section('title', 'JUL')
 
